@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $gray-darker;
     border-color: transparent;
     .navbar-brand {
+        font-weight:600;
         color: $theme-primary;
         @include script-font;
         &:hover,
@@ -143,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
         transition: padding 0.3s;
         border: none;
         .navbar-brand {
-            font-size: 2em;
+            font-size: 3em;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
@@ -162,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
+            color: white;
         }
     }
 }
@@ -175,7 +177,7 @@ header {
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 100px;
+        padding-top: 50px;
         padding-bottom: 50px;
         .intro-lead-in {
             @include serif-font;
@@ -197,8 +199,8 @@ header {
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
-            padding-bottom: 200px;
+            padding-top: 200px;
+            padding-bottom: 100px;
             .intro-lead-in {
                 @include serif-font;
                 font-style: italic;
@@ -238,7 +240,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
     }
 }
 

@@ -8,6 +8,14 @@ body {
     @include body-font;
 }
 
+.devicons {
+    font-size: 100px;
+    p {
+        @include script-font;
+        font-size: 24px;
+    }
+}
+
 .text-muted {
     color: $gray-light;
 }

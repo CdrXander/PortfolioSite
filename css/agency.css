@@ -7,6 +7,12 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.devicons {
+  font-size: 100px; }
+  .devicons p {
+    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, cursive;
+    font-size: 24px; }
+
 .text-muted {
   color: #777777; }
 

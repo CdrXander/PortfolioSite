@@ -16,8 +16,41 @@ body {
 .text-muted {
   color: #777777; }
 
+.white-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 400; }
+
 .text-primary {
   color: #233D68; }
+
+.text-bold {
+  font-weight: bold; }
+
+.link-lrg {
+  font-size: 20px; }
+
+.scroll-down {
+  text-align: -webkit-center; }
+  .scroll-down div {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    line-height: 50px;
+    color: white;
+    font-size: 39px;
+    transition: .3s;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+    .scroll-down div a {
+      color: white; }
+    .scroll-down div a:hover {
+      color: #233D68; }
+  .scroll-down div:hover {
+    border: 2px solid #233D68;
+    color: #233D68; }
 
 p {
   font-size: 14px;
@@ -55,6 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-darkest-gray {
   background-color: #222222; }
+
+.img-circle {
+  max-width: 350px; }
 
 .btn-primary {
   color: white;
@@ -213,8 +249,9 @@ header {
   text-align: center;
   color: white; }
   header .intro-text {
-    padding-top: 50px;
-    padding-bottom: 50px; }
+    display: flex;
+    height: 100vh;
+    flex-direction: column; }
     header .intro-text .intro-lead-in {
       font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-style: italic;
@@ -227,7 +264,8 @@ header {
       font-weight: 700;
       font-size: 50px;
       line-height: 50px;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      margin-top: 10vh; }
 
 @media (min-width: 768px) {
   header .intro-text {
@@ -276,9 +314,21 @@ section {
     display: block;
     position: relative;
     max-width: 400px;
-    margin: 0 auto; }
+    min-height: 260px;
+    background-color: black;
+    padding: auto;
+    margin: 0 auto;
+    overflow-y: hidden; }
+    #portfolio .portfolio-item .portfolio-link img {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -999; }
     #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-      background: rgba(35, 61, 104, 0.1);
+      background: rgba(35, 61, 104, 0.5);
       position: absolute;
       width: 100%;
       height: 100%;
@@ -303,6 +353,8 @@ section {
         #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
           margin: 0; }
   #portfolio .portfolio-item .portfolio-caption {
+    box-sizing: border-box;
+    width: 100%;
     max-width: 400px;
     margin: 0 auto;
     background-color: white;
@@ -584,6 +636,12 @@ ul.social-buttons {
   .portfolio-modal .modal-content ul.list-inline {
     margin-bottom: 30px;
     margin-top: 0; }
+  .portfolio-modal .modal-content ul.list-outline {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0px; }
+    .portfolio-modal .modal-content ul.list-outline .line-title {
+      font-weight: bold; }
   .portfolio-modal .modal-content img {
     margin-bottom: 30px; }
 

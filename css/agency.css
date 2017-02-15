@@ -697,3 +697,6 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #233D68; }
+
+.nike-img {
+  max-width: 150px; }
